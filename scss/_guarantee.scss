@@ -1,0 +1,28 @@
+
+:root {
+    --black: #000;
+    --white: #f8f8f8;
+    --grey: #ebebeb;
+    --green: #003837;
+    --greenHover: #00d107;
+    --lightGreen: #18814b;
+    --yellow: #ffa401;
+}
+
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: "Manrope", sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--white);
+}

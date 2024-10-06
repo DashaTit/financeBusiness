@@ -1,4 +1,5 @@
 @import url(../css/reset.css);
+@import url('./_guarantee.scss');
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
 
 :root {
@@ -1189,7 +1190,7 @@ body {
     padding-top: 50px !important;
 
     @media (max-width: 400px) {
-        margin-top: 0;
+        margin-top: -100;
     }
 }
 
@@ -1205,6 +1206,11 @@ body {
     border-radius: 50%;
     width: 40px !important;
     height: 40px !important;
+
+    @media (max-width: 400px) {
+        top: 43px !important;
+        z-index: 10;
+    }
 }
 .swiper-button-prev {
     left: 90% !important;
@@ -1514,7 +1520,7 @@ body {
             & li {
                 margin-bottom: 15px;
             }
-            & li:first-child {
+            & li:first-child > a {
                 text-transform: uppercase;
                 font-size: 18px;
                 font-weight: 600;
@@ -1540,14 +1546,13 @@ body {
                 color: var(--white);
                 font-size: 14px;
                 transition: 0.2s ease-in-out;
-                @media (hover: hover) {
-                    &:hover {
-                        text-shadow: 0 0 10px #ffffff;
-                    }
-                }
             }
         }
     }
+}
+
+.bank-link:hover {
+    cursor: pointer;
 }
 
 .footer__logo-text {
@@ -1557,6 +1562,10 @@ body {
     letter-spacing: 0.03em;
     font-size: 18px;
     font-weight: 300;
+}
+
+.down-mobile > a {
+    font-size: 10px;
 }
 
 @media (max-width: 400px) {
