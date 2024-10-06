@@ -1,5 +1,5 @@
 @import url(../css/reset.css);
-@import url('./_guarantee.scss');
+@import url('./guarantee.scss');
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
 
 :root {
@@ -593,6 +593,23 @@ body {
             //         text-shadow: 0 0 10px #ffffff;
             //     }
             // }
+        }
+        &-block {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            
+
+            & li {
+                border: none;
+                
+
+                & a {
+                    padding: 8px 14px;
+                    border-radius: 68px;
+                    border: 0.5px solid rgba(#d7d7d7, 0.26);
+                }
+            }
         }
         &-accent {
             font-size: 16px;

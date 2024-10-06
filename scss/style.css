@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(../css/reset.css);
-@import url("./_guarantee.scss");
+@import url("./guarantee.scss");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
 :root {
   --black: #000;
@@ -446,6 +446,16 @@ body {
       color: var(--white);
       font-size: 14px;
       transition: 0.2s ease-in-out; }
+    .menu__list-block {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+      .menu__list-block li {
+        border: none; }
+        .menu__list-block li a {
+          padding: 8px 14px;
+          border-radius: 68px;
+          border: 0.5px solid rgba(215, 215, 215, 0.26); }
     .menu__list-accent {
       font-size: 16px;
       font-weight: 600;
