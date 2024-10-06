@@ -445,9 +445,6 @@ body {
       color: var(--white);
       font-size: 14px;
       transition: 0.2s ease-in-out; }
-      @media (hover: hover) {
-        .menu__list-item a:hover {
-          text-shadow: 0 0 10px #ffffff; } }
     .menu__list-accent {
       font-size: 16px;
       font-weight: 600;
@@ -497,7 +494,6 @@ body {
 
 .btn {
   background-color: #d68900;
-  box-shadow: 0 0 25px #ffb93c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -506,7 +502,10 @@ body {
   font-weight: 600;
   width: 228px;
   height: 65px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all .3s ease-in-out; }
+  .btn:hover {
+    box-shadow: 0 0 25px #ffb93c; }
 
 .wa-btn {
   width: 210px;
@@ -515,8 +514,7 @@ body {
   gap: 10px;
   border-radius: 10px;
   font-weight: 600;
-  margin-bottom: 15px;
-  box-shadow: 0 0 25px #ffb93c; }
+  margin-bottom: 15px; }
 
 .number-wrap {
   display: flex;
@@ -589,8 +587,6 @@ body {
             text-align: center;
             display: block;
             margin-bottom: 10px; } }
-    .wellcome__subtitle-accent {
-      text-shadow: 0 0 10px #ffffff; }
   .wellcome__btn {
     z-index: 1;
     width: 319px;
@@ -1170,7 +1166,7 @@ body {
         font-size: 14px;
         font-weight: 400;
         text-transform: none;
-        margin-bottom: 0; } }
+        margin-bottom: 15; } }
   @media (max-width: 400px) {
     .footer_container-left ul li:last-child, .footer_container-right ul li:last-child {
       text-transform: uppercase;
@@ -1197,11 +1193,11 @@ body {
   .footer_container-down > a {
     font-size: 10px; } }
 .highlight {
-  animation: anim 2s 1; }
+  animation: anim 10s 1; }
 
 @keyframes anim {
   0% {
-    text-shadow: 0 0 10px #ffb93c; }
+    text-shadow: 0 0 10px #fff; }
   100% {
     text-shadow: none; } }
 

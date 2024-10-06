@@ -89,11 +89,11 @@ function countBenefit() {
     }
 }
 
-const title = document.querySelector(".title");
+const title = document.querySelector(".wellcome__subtitle-accent");
 
 const Visible = function (target) {
     var targetPosition = {
-            top: window.pageYOffset + target.getBoundingClientRect().top + 400,
+            top: window.pageYOffset + target.getBoundingClientRect().top,
             left: window.pageXOffset + target.getBoundingClientRect().left,
             right: window.pageXOffset + target.getBoundingClientRect().right,
             bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
@@ -119,14 +119,14 @@ const Visible = function (target) {
 };
 
 window.addEventListener("scroll", function () {
-    Visible(document.querySelector(".denial__title"));
-    Visible(document.querySelector(".ways__title"));
-    Visible(document.querySelector(".experience_title"));
-    Visible(document.querySelector(".reviews__title"));
-    Visible(document.querySelector(".ot__title"));
-    Visible(document.querySelector(".work__title"));
-    Visible(document.querySelector(".benefit__title"));
-    Visible(document.querySelector(".questions__title"));
+    Visible(document.querySelector(".wellcome__subtitle-accent"));
+    // Visible(document.querySelector(".ways__title"));
+    // Visible(document.querySelector(".experience_title"));
+    // Visible(document.querySelector(".reviews__title"));
+    // Visible(document.querySelector(".ot__title"));
+    // Visible(document.querySelector(".work__title"));
+    // Visible(document.querySelector(".benefit__title"));
+    // Visible(document.querySelector(".questions__title"));
 });
 
 Visible(title);

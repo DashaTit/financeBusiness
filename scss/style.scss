@@ -587,11 +587,11 @@ body {
             color: var(--white);
             font-size: 14px;
             transition: 0.2s ease-in-out;
-            @media (hover: hover) {
-                &:hover {
-                    text-shadow: 0 0 10px #ffffff;
-                }
-            }
+            // @media (hover: hover) {
+            //     &:hover {
+            //         text-shadow: 0 0 10px #ffffff;
+            //     }
+            // }
         }
         &-accent {
             font-size: 16px;
@@ -657,7 +657,7 @@ body {
 
 .btn {
     background-color: #d68900;
-    box-shadow: 0 0 25px #ffb93c;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -669,6 +669,12 @@ body {
     width: 228px;
     height: 65px;
     border-radius: 10px;
+
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 0 25px #ffb93c;
+    }
 }
 
 .wa-btn {
@@ -679,7 +685,7 @@ body {
     border-radius: 10px;
     font-weight: 600;
     margin-bottom: 15px;
-    box-shadow: 0 0 25px #ffb93c;
+    
 }
 
 .number-wrap {
@@ -770,9 +776,7 @@ body {
             }
         }
 
-        &-accent {
-            text-shadow: 0 0 10px #ffffff;
-        }
+        
     }
     &__btn {
         z-index: 1;
@@ -1520,7 +1524,7 @@ body {
                     font-size: 14px;
                     font-weight: 400;
                     text-transform:none;
-                    margin-bottom: 0;
+                    margin-bottom: 15;
                 }
             }
 
@@ -1562,12 +1566,12 @@ body {
 }
 
 .highlight {
-    animation: anim 2s 1;
+    animation: anim 10s 1;
 }
 
 @keyframes anim {
     0% {
-        text-shadow: 0 0 10px #ffb93c;
+        text-shadow: 0 0 10px #fff;
     }
     100% {
         text-shadow: none;
