@@ -34,7 +34,7 @@ body {
     margin: 0 auto;
     padding: 0px 100px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         padding: 0 10px;
     }
 }
@@ -43,6 +43,11 @@ body {
     font-weight: 600;
     line-height: 54.64px;
     margin-bottom: 20px;
+
+    @media (max-width: 1000px) {
+        font-size: 30px;
+        line-height: 34.15px;
+    }
     @media (max-width: 590px) {
         font-size: 35px;
         line-height: 40px;
@@ -423,6 +428,11 @@ body {
                 height: auto;
             }
 
+            @media (max-width: 400px) {
+                top: 130px;
+                right: 5px;
+            }
+
             
         }
 
@@ -458,6 +468,10 @@ body {
             @media (max-width: 620px) {
                 width: 245px;
             }
+
+            @media (max-width: 470px) {
+                left: 40px;
+            }
         }
     }
 }
@@ -469,13 +483,21 @@ body {
     border-radius: 52px;
     margin-top: -100px;
     padding: 20px 100px;
-
     color: #191919;
+
+    @media (max-width: 750px) {
+        padding: 20px 20px;
+    }
 }
 
 .issue__section {
     display: flex;
     align-items: center;
+    
+
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+    }
 
     &-text {
         width: 820px;
@@ -485,12 +507,19 @@ body {
             font-size: 20px;
             margin-top: 30px;
             color: #191919;
+            @media (max-width: 750px) {
+                margin-top: 18px;
+            }
+
+            @media (max-width: 600px) {
+                margin-top: 16px;
+            }
         }
     }
 
     &-img {
         img {
-            width: 398px;
+            width: 498px;
         }
     }
 
@@ -501,7 +530,16 @@ body {
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
+
+
     & .article {
+        @media (max-width: 750px) {
+            margin-top: 20px;
+        }
+        margin-right: 10px;
         &-line {
             width: 102px;
             height: 3px;
@@ -515,6 +553,18 @@ body {
             font-weight: 600;
             font-size: 40px;
             text-transform: uppercase;
+
+            @media (max-width: 1300px) {
+                font-size: 30px;
+            }
+
+            @media (max-width: 1120px) {
+                font-size: 26px;
+            }
+
+            @media (max-width: 1000px) {
+                font-size: 22px;
+            }
         }
     }
 }
@@ -528,6 +578,11 @@ body {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 18px;
+
+        @media (max-width: 850px) {
+            grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        }
     }
 
     &-card {
@@ -539,6 +594,10 @@ body {
             color: #191919;
             font-size: 22px;
             font-weight: 500;
+
+            @media (max-width: 1120px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -551,6 +610,11 @@ body {
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 18px;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        }
     }
 
     &-card {
@@ -558,13 +622,24 @@ body {
         border-radius: 15px;
         padding: 40px;
         background-color: #f4f4f4;
+        @media (max-width: 450px) {
+            height: 323px;
+        }
 
         & div {
+            @media (max-width: 450px) {
+                text-align: center;
+            }
             & h3 {
                 color: #191919;
                 font-size: 30px;
                 font-weight: 600;
                 margin-bottom: 170px;
+
+                @media (max-width: 450px) {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
             }
 
             & button {
@@ -587,14 +662,47 @@ body {
                 &:hover {
                     box-shadow: 0 0 25px #00c35f;
                 }
+
+                @media (max-width: 450px) {
+                    margin-left: 30px;
+                }
+
+                @media (max-width: 410px) {
+                    margin-left: 0px;
+                }
             }
         }
+
+        // @media (max-width: 410px) {
+        //     img:first-child {
+        //         top: 190px;
+        //     }
+            
+        // }
 
         & img {
             position: absolute;
             top: 85px;
             right: 0;
+
+            @media (max-width: 1300px) {
+                width: 176px;
+            }
+
+            @media (max-width: 450px) {
+                top: 160px;
+                left: 70px;
+                right: auto;
+            }
+
+            @media (max-width: 410px) {
+                top: 170px;
+                width: 140px;
+            }
         }
+
+            
+        
     }
 }
 
@@ -606,6 +714,10 @@ body {
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 18px;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &-card {
@@ -616,6 +728,10 @@ body {
             font-size: 30px;
             font-weight: 600;
             color: #191919;
+
+            @media (max-width: 420px) {
+                font-size: 24px;
+            }
         }
 
         & p {
@@ -623,10 +739,19 @@ body {
             margin-bottom: 20px;
             font-size: 18px;
             color: #191919;
+
+            @media (max-width: 420px) {
+                margin-top: 15px;
+                font-size: 16px;
+            }
         }
 
         & div {
             text-align: end;
+
+            @media (max-width: 420px) {
+                text-align: center;
+            }
         }
     }
 }
@@ -634,10 +759,18 @@ body {
 .write__section {
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    
+    // flex-direction: column;
+
+    @media (max-width: 1000px) {
+        height: auto;
+        flex-direction: column;
+    }
     margin-bottom: 75px;
 
-    background-image: url('../img/businessGuarantees/bg-frame.png');
+    background: radial-gradient(#042F2D, #0D3D35);
+
     background-position: center;
     height: 450px;
     background-repeat: no-repeat;
@@ -646,13 +779,49 @@ body {
     & h1 {
         font-size: 50px;
         font-weight: 600;
-        margin-bottom: 200px;
+        margin-bottom: 170px;
+
+        @media (max-width: 1000px) {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 850px) {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 590px) {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 
     & a {
         height: 60px;
         width: 304px;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 400px) {
+            padding: 10px;
+        }
     }
+
+    
 }
 
 
@@ -708,6 +877,11 @@ body {
     justify-content: space-between;
 }
 
+.fc {
+    font-size: 14px;
+                    font-weight: 400;
+                    text-transform:none;
+}
 .footer_container-down {
     margin-top: 100px;
     display: flex;
@@ -722,6 +896,13 @@ body {
             margin-top: 20px;
     }
 }
+
+.bank-link > a {
+    text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 20px;
+}
 .footer_container {
     &-left,
     &-right {
@@ -732,19 +913,13 @@ body {
             & li {
                 margin-bottom: 15px;
             }
-            & li:first-child > a {
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: 600;
-                margin-bottom: 20px;
+            // & li:first-child > a {
+            //     text-transform: uppercase;
+            //     font-size: 18px;
+            //     font-weight: 600;
+            //     margin-bottom: 20px;
 
-                @media (max-width: 400px) {
-                    font-size: 14px;
-                    font-weight: 400;
-                    text-transform:none;
-                    margin-bottom: 15;
-                }
-            }
+            // }
 
             @media (max-width: 400px) {
                 & li:last-child {
@@ -783,5 +958,84 @@ body {
 @media (max-width: 400px) {
     .footer_container-down > a {
         font-size: 10px;
+    }
+}
+
+.modal {
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    
+    
+}
+
+.modal.active {
+    background-color: rgb(1, 1, 1, 0.5);
+    width: 100%;
+    height: 6563px;
+    opacity: 1;
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal__content {
+    margin-top: 100px;
+    border-radius: 15px;
+    width: 820px;
+    height: 601px;
+    padding: 40px;
+    background-color: #F8F8F8;
+    color: #191919;
+
+    @media (max-width: 900px) {
+        margin-top: 100px;
+    border-radius: 10px;
+    width: 312px;
+    height: 780px;
+    padding: 10px 20px;
+    background-color: #F8F8F8;
+    color: #191919;
+    }
+
+    &-escape {
+        text-align: end;
+    }
+
+    &-title {
+        color: #191919;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        @media (max-width: 900px) {
+            font-size: 24px;
+        }
+    }
+
+    &-item {
+        list-style: url('./img/businessGuarantees/dote.svg');
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        @media (max-width: 900px) {
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+.highlight {
+    animation: anim 10s 1;
+}
+
+@keyframes anim {
+    0% {
+        text-shadow: 0 0 30px #23971E;
+    }
+    100% {
+        text-shadow: none;
     }
 }
