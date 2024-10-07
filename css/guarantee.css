@@ -891,6 +891,10 @@ body {
   margin-bottom: 20px;
 }
 
+.bank-link {
+  margin-bottom: 30px;
+}
+
 .footer_container-left, .footer_container-right {
   display: flex;
   justify-content: space-between;
@@ -998,7 +1002,7 @@ body {
 }
 
 .highlight {
-  animation: anim 10s 1;
+  animation: anim 3s infinite;
 }
 
 @keyframes anim {

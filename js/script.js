@@ -19,6 +19,49 @@ function openMobMenu() {
     });
 }
 
+document.querySelector('.i1').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i2').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i3').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i4').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i5').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i6').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+
 function initialisingSwiper() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
@@ -120,13 +163,6 @@ const Visible = function (target) {
 
 window.addEventListener("scroll", function () {
     Visible(document.querySelector(".wellcome__subtitle-accent"));
-    // Visible(document.querySelector(".ways__title"));
-    // Visible(document.querySelector(".experience_title"));
-    // Visible(document.querySelector(".reviews__title"));
-    // Visible(document.querySelector(".ot__title"));
-    // Visible(document.querySelector(".work__title"));
-    // Visible(document.querySelector(".benefit__title"));
-    // Visible(document.querySelector(".questions__title"));
 });
 
 Visible(title);

@@ -109,3 +109,38 @@ document.querySelector('.ok3').addEventListener('click', () => {
 	Visible(document.getElementById('time2'));
 })
 
+
+window.addEventListener("scroll", function () {
+    Visible(document.querySelector(".procent"));
+    Visible(document.getElementById("time2"));
+});
+
+
+document.querySelector('.i1').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i2').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i3').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 
+document.querySelector('.i4').addEventListener('click', () => {
+    const burgerBtn = document.querySelector(".burger");
+    const mobMenu = document.querySelector(".mob-menu");
+    console.log('click')
+    burgerBtn.classList.toggle("active");
+    mobMenu.classList.toggle("active");
+}) 

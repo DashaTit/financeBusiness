@@ -61,3 +61,4 @@ document.querySelector('.time3').addEventListener('click', () => {
 document.querySelector('.ok3').addEventListener('click', () => {
 	Visible(document.getElementById('time2'));
 })
+

@@ -903,6 +903,10 @@ body {
                 font-weight: 600;
                 margin-bottom: 20px;
 }
+
+.bank-link {
+    margin-bottom: 30px;
+}
 .footer_container {
     &-left,
     &-right {
@@ -1028,7 +1032,7 @@ body {
 
 
 .highlight {
-    animation: anim 10s 1;
+    animation: anim 3s infinite;
 }
 
 @keyframes anim {
