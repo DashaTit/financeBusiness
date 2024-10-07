@@ -31,7 +31,12 @@ body {
 .container {
   max-width: 1256px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 0px 100px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
 }
 
 .title {
@@ -110,7 +115,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-@media (max-width: 380px) {
+@media (max-width: 1000px) {
   .header__logo {
     display: flex;
     width: 100%;
@@ -350,9 +355,31 @@ body {
   align-items: center;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .header__content {
+    flex-direction: column;
+  }
+}
 .header__content-title {
   font-size: 50px;
   font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .header__content-title {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__content-title {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 620px) {
+  .header__content-title {
+    font-size: 28px;
+    margin-top: 30px;
+  }
 }
 .header__content-img img {
   position: absolute;
@@ -362,11 +389,69 @@ body {
   width: 357px;
   height: 279px;
 }
+@media (max-width: 1256px) {
+  .header__content-img .approved {
+    right: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__content-img .approved {
+    top: 80px;
+    right: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .header__content-img .approved {
+    top: 80px;
+    right: auto;
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 620px) {
+  .header__content-img .approved {
+    top: 142px;
+    width: 197px;
+    height: auto;
+  }
+}
 .header__content-img .phone {
   top: 105px;
   right: 0px;
   width: 336px;
   height: 406px;
+}
+@media (max-width: 1256px) {
+  .header__content-img .phone {
+    right: 30px;
+    width: 336px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__content-img .phone {
+    top: 180px;
+    left: 300px;
+    width: 336px;
+  }
+}
+@media (max-width: 1000px) {
+  .header__content-img .phone {
+    top: 180px;
+    left: 200px;
+    width: 336px;
+  }
+}
+@media (max-width: 750px) {
+  .header__content-img .phone {
+    top: 180px;
+    left: 100px;
+    width: 336px;
+  }
+}
+@media (max-width: 620px) {
+  .header__content-img .phone {
+    width: 245px;
+  }
 }
 
 .wrapper-white {
