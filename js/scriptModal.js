@@ -109,7 +109,3 @@ document.querySelector('.ok3').addEventListener('click', () => {
 	Visible(document.getElementById('time2'));
 })
 
-window.addEventListener("scroll", function () {
-    Visible(document.querySelector(".procent"));
-    Visible(document.querySelector(".time"));
-});
