@@ -73,17 +73,12 @@ const Visible = function (target) {
             right: window.pageXOffset + document.documentElement.clientWidth,
             bottom: window.pageYOffset + document.documentElement.clientHeight,
         };
-
-        
-
     if (
-        targetPosition.bottom > windowPosition.top && 
-        targetPosition.top < windowPosition.bottom && 
-        targetPosition.right > windowPosition.left &&
-        targetPosition.left < windowPosition.right
+        targetPosition.bottom >= windowPosition.top || 
+        targetPosition.top <= windowPosition.bottom ||
+        targetPosition.right >= windowPosition.left ||
+        targetPosition.left <= windowPosition.right
     ) {
-        console.log(target)
-        console.log("Вы видите элемент :)");
         target.classList.add('highlight');
     } else {
         target.classList.remove('highlight');
@@ -91,16 +86,30 @@ const Visible = function (target) {
 };
 
 document.querySelector('.time').addEventListener('click', () => {
-    console.log('click')
 	Visible(document.getElementById('time1'));
-		//setTimeout( () => document.getElementById(link_id).classList.remove('highlight'), 10000)
-
-
 })
 
-// window.addEventListener("scroll", function () {
-//     Visible(document.querySelector(".procent"));
-//     Visible(document.querySelector(".time"));
-// });
+document.querySelector('.ok').addEventListener('click', () => {
+	Visible(document.getElementById('time2'));
+})
 
-// Visible(title);
+document.querySelector('.time1').addEventListener('click', () => {
+	Visible(document.getElementById('time1'));
+})
+
+document.querySelector('.ok1').addEventListener('click', () => {
+	Visible(document.getElementById('time2'));
+})
+
+document.querySelector('.time3').addEventListener('click', () => {
+	Visible(document.getElementById('time1'));
+})
+
+document.querySelector('.ok3').addEventListener('click', () => {
+	Visible(document.getElementById('time2'));
+})
+
+window.addEventListener("scroll", function () {
+    Visible(document.querySelector(".procent"));
+    Visible(document.querySelector(".time"));
+});
