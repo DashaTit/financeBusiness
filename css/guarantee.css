@@ -811,19 +811,6 @@ body {
     padding: 10px;
   }
 }
-@media (max-width: 500px) {
-  .write__section div {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .write__section a {
-    padding: 20px;
-  }
-  .write__section a img {
-    margin-left: 10px;
-  }
-}
 
 .footer-mobile {
   display: none;

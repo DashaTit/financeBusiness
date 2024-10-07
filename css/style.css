@@ -133,7 +133,6 @@ body {
 @media (max-width: 1200px) {
   .header__logo {
     display: flex;
-    width: 100%;
     align-items: center;
   }
   .header__logo img {
