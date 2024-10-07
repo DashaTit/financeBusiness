@@ -74,10 +74,8 @@ const Visible = function (target) {
             bottom: window.pageYOffset + document.documentElement.clientHeight,
         };
     if (
-        targetPosition.bottom >= windowPosition.top || 
-        targetPosition.top <= windowPosition.bottom ||
-        targetPosition.right >= windowPosition.left ||
-        targetPosition.left <= windowPosition.right
+        targetPosition.bottom >= windowPosition.top &&
+        targetPosition.top <= windowPosition.bottom
     ) {
         target.classList.add('highlight');
     } else {
@@ -85,34 +83,39 @@ const Visible = function (target) {
     }
 };
 
-document.querySelector('.time').addEventListener('click', () => {
-	Visible(document.getElementById('time1'));
-})
+// document.querySelector('.time').addEventListener('click', () => {
+// 	Visible(document.getElementById('time1'));
+// })
 
-document.querySelector('.ok').addEventListener('click', () => {
-	Visible(document.getElementById('time2'));
-})
+// document.querySelector('.ok').addEventListener('click', () => {
+// 	Visible(document.getElementById('time2'));
+// })
 
-document.querySelector('.time1').addEventListener('click', () => {
-	Visible(document.getElementById('time1'));
-})
+// document.querySelector('.time1').addEventListener('click', () => {
+// 	Visible(document.getElementById('time1'));
+// })
 
-document.querySelector('.ok1').addEventListener('click', () => {
-	Visible(document.getElementById('time2'));
-})
+// document.querySelector('.ok1').addEventListener('click', () => {
+// 	Visible(document.getElementById('time2'));
+// })
 
-document.querySelector('.time3').addEventListener('click', () => {
-	Visible(document.getElementById('time1'));
-})
+// document.querySelector('.time3').addEventListener('click', () => {
+// 	Visible(document.getElementById('time1'));
+// })
 
-document.querySelector('.ok3').addEventListener('click', () => {
-	Visible(document.getElementById('time2'));
-})
+// document.querySelector('.ok3').addEventListener('click', () => {
+// 	Visible(document.getElementById('time2'));
+// })
 
+
+// window.addEventListener("scroll", function () {
+//     Visible(document.querySelector(".procent"));
+//     Visible(document.querySelector(".time5"));
+// });
 
 window.addEventListener("scroll", function () {
     Visible(document.querySelector(".procent"));
-    Visible(document.getElementById("time2"));
+    Visible(document.querySelector(".time5"));
 });
 
 
@@ -144,3 +147,4 @@ document.querySelector('.i4').addEventListener('click', () => {
     burgerBtn.classList.toggle("active");
     mobMenu.classList.toggle("active");
 }) 
+

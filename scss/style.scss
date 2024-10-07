@@ -127,7 +127,7 @@ body {
             font-weight: 300;
         }
 
-        @media (max-width: 380px) {
+        @media (max-width: 1200px) {
             display: flex;
             width: 100%;
             align-items: center;
@@ -1589,14 +1589,15 @@ body {
 }
 
 .highlight {
-    animation: anim 60s 1;
+    animation: anim 3s 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes anim {
     0% {
-        text-shadow: 0 0 10px #fff;
+        text-shadow: none;
     }
     100% {
-        text-shadow: none;
+        text-shadow: 0 0 10px #fff;
     }
 }

@@ -121,7 +121,7 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .header__logo {
     display: flex;
     width: 100%;
@@ -811,6 +811,19 @@ body {
     padding: 10px;
   }
 }
+@media (max-width: 500px) {
+  .write__section div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .write__section a {
+    padding: 20px;
+  }
+  .write__section a img {
+    margin-left: 10px;
+  }
+}
 
 .footer-mobile {
   display: none;
@@ -1002,15 +1015,16 @@ body {
 }
 
 .highlight {
-  animation: anim 3s infinite;
+  animation: anim 3s 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes anim {
   0% {
-    text-shadow: 0 0 30px #23971E;
+    text-shadow: none;
   }
   100% {
-    text-shadow: none;
+    text-shadow: 0 0 30px #23971E;
   }
 }
 .policy__title {
