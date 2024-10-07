@@ -167,6 +167,7 @@ window.addEventListener("scroll", function () {
 });
 
 Visible(title);
+Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 
 
 
