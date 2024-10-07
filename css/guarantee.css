@@ -29,9 +29,9 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1256px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 100px;
 }
 
 .title {
@@ -364,7 +364,7 @@ body {
 }
 .header__content-img .phone {
   top: 105px;
-  right: 70px;
+  right: 0px;
   width: 336px;
   height: 406px;
 }
@@ -395,7 +395,6 @@ body {
 }
 .issue__section-img img {
   width: 398px;
-  height: 416px;
 }
 
 .articles {
@@ -483,6 +482,9 @@ body {
   right: 0;
 }
 
+.purchase__section {
+  margin-bottom: 180px;
+}
 .purchase__section-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -514,6 +516,7 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 75px;
   background-image: url("../img/businessGuarantees/bg-frame.png");
   background-position: center;
   height: 450px;
