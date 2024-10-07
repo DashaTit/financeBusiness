@@ -1588,8 +1588,12 @@ body {
     }
 }
 
+.pause {
+    animation-play-state: paused;
+}
+
 .highlight {
-    animation: anim 3s 1;
+    animation: anim 1s 1;
     animation-fill-mode: forwards;
 }
 

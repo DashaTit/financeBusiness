@@ -166,6 +166,10 @@ window.addEventListener("scroll", function () {
     Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 });
 
+window.addEventListener('mouseover', () => {
+    document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
+})
+
 Visible(title);
 Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 
