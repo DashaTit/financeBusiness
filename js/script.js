@@ -163,6 +163,7 @@ const Visible = function (target) {
 
 window.addEventListener("scroll", function () {
     Visible(document.querySelector(".wellcome__subtitle-accent"));
+    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 });
 
 Visible(title);
