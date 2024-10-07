@@ -166,7 +166,8 @@ window.addEventListener("scroll", function () {
     Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 });
 
-window.addEventListener('mouseover', () => {
+document.querySelector('.header').addEventListener('touchstart', () => {
+    console.log('touch')
     document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
     document.querySelector(".wellcome__subtitle-accent_mob").classList.remove('highlight')
 })
@@ -177,7 +178,7 @@ document.addEventListener('mousemove', function() {
     x = setTimeout(()=>{
         Visible(document.querySelector(".wellcome__subtitle-accent"));
         Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-    }, 200); 
+    }, 400); 
 }, false);
 
 Visible(title);
