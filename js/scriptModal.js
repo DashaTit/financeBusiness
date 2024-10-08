@@ -90,50 +90,44 @@ document.querySelector('.time').addEventListener('click', () => {
 	// Visible(document.getElementById('time1'));
     target = document.querySelector('.procent')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.time5').classList.remove('highlight');
 })
 
 document.querySelector('.ok').addEventListener('click', () => {
     console.log('proc')
     target = document.querySelector('.time5')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.procent').classList.remove('highlight');
 })
 
 document.querySelector('.time1').addEventListener('click', () => {
 	target = document.querySelector('.procent')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.time5').classList.remove('highlight');
 })
 
 document.querySelector('.ok1').addEventListener('click', () => {
 	target = document.querySelector('.time5')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.procent').classList.remove('highlight');
 })
 
 document.querySelector('.time3').addEventListener('click', () => {
 	target = document.querySelector('.procent')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.time5').classList.remove('highlight');
+    // setTimeout(() => {
+    //     target.classList.remove('highlight');
+    // }, 2000)
 })
 
 document.querySelector('.ok3').addEventListener('click', () => {
 	target = document.querySelector('.time5')
     target.classList.add('highlight');
-    setTimeout(() => {
-        target.classList.remove('highlight');
-    }, 2000)
+    document.querySelector('.procent').classList.remove('highlight');
+    // setTimeout(() => {
+    //     target.classList.remove('highlight');
+    // }, 2000)
 })
 
 document.querySelector('.i1').addEventListener('click', () => {

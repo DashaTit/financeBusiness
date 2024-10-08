@@ -1052,16 +1052,16 @@ body {
 
 .highlight {
     // text-shadow: 0 0 30px #23971E;
-    animation: anim 1s 1;
-    // animation-fill-mode: forwards;
+    animation: anim 1s infinite;
+    animation-fill-mode: forwards;
 }
 
 @keyframes anim {
     0% {
-        text-shadow: 0 0 30px #23971E;
+        text-shadow:  none;
     }
     100% {
-        text-shadow: none ;
+        text-shadow:0 0 30px #23971E; ;
     }
 }
 
