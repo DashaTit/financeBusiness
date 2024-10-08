@@ -166,20 +166,55 @@ window.addEventListener("scroll", function () {
     Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 });
 
-document.querySelector('.header').addEventListener('touchstart', () => {
-    console.log('touch')
-    document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
-    document.querySelector(".wellcome__subtitle-accent_mob").classList.remove('highlight')
-})
+// document.querySelector('.header').addEventListener('mousedown', () => {
+//     console.log('touch')
+//     document.querySelector(".wellcome__subtitle-accent").classList.toggle('highlight')
+//     document.querySelector(".wellcome__subtitle-accent_mob").classList.remove('highlight')
+// })
 
-var x;
-document.addEventListener('mousemove', function() { 
-    if (x) clearTimeout(x); 
-    x = setTimeout(()=>{
-        Visible(document.querySelector(".wellcome__subtitle-accent"));
+// var x;
+// document.addEventListener('mousemove', function() { 
+//     if (x) clearTimeout(x); 
+//     x = setTimeout(()=>{
+//         Visible(document.querySelector(".wellcome__subtitle-accent"));
+//         Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+//     }, 400); 
+// }, false);
+
+var touchStartTimeStamp = 0;
+var touchEndTimeStamp   = 0;
+
+window.addEventListener('touchstart', onTouchStart,false);
+window.addEventListener('touchend', onTouchEnd,false);
+
+window.addEventListener('mousedown', onTouchStart,false);
+window.addEventListener('mouseup', onTouchEnd,false);
+
+
+var timer;
+function onTouchStart(e) {
+    touchStartTimeStamp = e.timeStamp;
+        document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
+    document.querySelector(".wellcome__subtitle-accent_mob").classList.remove
+    
+    ('highlight')
+}
+
+function onTouchEnd(e) {
+    touchEndTimeStamp = e.timeStamp;
+    console.log(touchEndTimeStamp - touchStartTimeStamp);// in miliseconds
+            Visible(document.querySelector(".wellcome__subtitle-accent"));
         Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-    }, 400); 
-}, false);
+}
+
+function onTouch(e) {
+    document.querySelector(".wellcome__subtitle-accent").classList.contains('highlight') ? document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight') :  Visible(document.querySelector(".wellcome__subtitle-accent"));
+    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+}
+
+
+// window.addEventListener('click', onTouch, false);
+
 
 Visible(title);
 Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
