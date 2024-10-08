@@ -119,6 +119,37 @@ window.addEventListener("scroll", function () {
 });
 
 
+var touchStartTimeStamp = 0;
+var touchEndTimeStamp   = 0;
+
+window.addEventListener('touchstart', onTouchStart,false);
+window.addEventListener('touchend', onTouchEnd,false);
+
+window.addEventListener('mousedown', onTouchStart,false);
+window.addEventListener('mouseup', onTouchEnd,false);
+
+
+var timer;
+function onTouchStart(e) {
+    touchStartTimeStamp = e.timeStamp;
+        document.querySelector(".procent").classList.remove('highlight')
+    document.querySelector(".time5").classList.remove('highlight')
+}
+
+function onTouchEnd(e) {
+    touchEndTimeStamp = e.timeStamp;
+    console.log(touchEndTimeStamp - touchStartTimeStamp);// in miliseconds
+            Visible(document.querySelector(".procent"));
+        Visible(document.querySelector(".time5"));
+}
+
+function onTouch(e) {
+    document.querySelector(".wellcome__subtitle-accent").classList.contains('highlight') ? document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight') :  Visible(document.querySelector(".wellcome__subtitle-accent"));
+    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+}
+
+
+
 document.querySelector('.i1').addEventListener('click', () => {
     const burgerBtn = document.querySelector(".burger");
     const mobMenu = document.querySelector(".mob-menu");
