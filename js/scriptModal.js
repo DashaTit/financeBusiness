@@ -60,36 +60,81 @@ modalSp.addEventListener("click", (e) => {
     }
 });
 
-// document.querySelector('.time').addEventListener('click', () => {
-// 	Visible(document.getElementById('time1'));
-// })
+const Visible = function (target) {
+    var targetPosition = {
+            top: window.pageYOffset + target.getBoundingClientRect().top,
+            left: window.pageXOffset + target.getBoundingClientRect().left,
+            right: window.pageXOffset + target.getBoundingClientRect().right,
+            bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+        },
+        windowPosition = {
+            top: window.pageYOffset,
+            left: window.pageXOffset,
+            right: window.pageXOffset + document.documentElement.clientWidth,
+            bottom: window.pageYOffset + document.documentElement.clientHeight,
+        };
 
-// document.querySelector('.ok').addEventListener('click', () => {
-// 	Visible(document.getElementById('time2'));
-// })
+    if (
+        targetPosition.bottom > windowPosition.top &&
+        targetPosition.top < windowPosition.bottom
+    ) {
+        console.log("Вы видите элемент :)");
+        target.classList.add('highlight');
+    } else {
+        target.classList.remove('highlight');
+    }
+};
 
-// document.querySelector('.time1').addEventListener('click', () => {
-// 	Visible(document.getElementById('time1'));
-// })
+document.querySelector('.time').addEventListener('click', () => {
+    console.log('hi!')
+	// Visible(document.getElementById('time1'));
+    target = document.querySelector('.procent')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
-// document.querySelector('.ok1').addEventListener('click', () => {
-// 	Visible(document.getElementById('time2'));
-// })
+document.querySelector('.ok').addEventListener('click', () => {
+    console.log('proc')
+    target = document.querySelector('.time5')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
-// document.querySelector('.time3').addEventListener('click', () => {
-// 	Visible(document.getElementById('time1'));
-// })
+document.querySelector('.time1').addEventListener('click', () => {
+	target = document.querySelector('.procent')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
-// document.querySelector('.ok3').addEventListener('click', () => {
-// 	Visible(document.getElementById('time2'));
-// })
+document.querySelector('.ok1').addEventListener('click', () => {
+	target = document.querySelector('.time5')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
+document.querySelector('.time3').addEventListener('click', () => {
+	target = document.querySelector('.procent')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
-// window.addEventListener("scroll", function () {
-//     Visible(document.querySelector(".procent"));
-//     Visible(document.querySelector(".time5"));
-// });
-
+document.querySelector('.ok3').addEventListener('click', () => {
+	target = document.querySelector('.time5')
+    target.classList.add('highlight');
+    setTimeout(() => {
+        target.classList.remove('highlight');
+    }, 2000)
+})
 
 document.querySelector('.i1').addEventListener('click', () => {
     const burgerBtn = document.querySelector(".burger");
