@@ -622,6 +622,7 @@ body {
 }
 
 .menu__list-accent_mobile {
+    
     font-size: 16px;
             font-weight: 600;
             text-transform: uppercase;
@@ -787,6 +788,7 @@ body {
                 text-align: center;
 
                 .wellcome-accent {
+                    
                     text-align: center;
                     display: block;
                     margin-bottom: 10px;
@@ -1593,15 +1595,16 @@ body {
 }
 
 .highlight {
-    animation: anim 1s 1;
-    animation-fill-mode: forwards;
+    text-shadow: 0 0 10px #fff;
+    // animation: anim 1s 1;
+    // animation-fill-mode: forwards;
 }
 
-@keyframes anim {
-    0% {
-        text-shadow: none;
-    }
-    100% {
-        text-shadow: 0 0 10px #fff;
-    }
-}
+// @keyframes anim {
+//     0% {
+//         text-shadow: none;
+//     }
+//     100% {
+//         text-shadow: 0 0 10px #fff;
+//     }
+// }

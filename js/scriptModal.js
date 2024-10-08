@@ -60,29 +60,6 @@ modalSp.addEventListener("click", (e) => {
     }
 });
 
-const Visible = function (target) {
-    var targetPosition = {
-            top: window.pageYOffset + target.getBoundingClientRect().top,
-            left: window.pageXOffset + target.getBoundingClientRect().left,
-            right: window.pageXOffset + target.getBoundingClientRect().right,
-            bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
-        },
-        windowPosition = {
-            top: window.pageYOffset,
-            left: window.pageXOffset,
-            right: window.pageXOffset + document.documentElement.clientWidth,
-            bottom: window.pageYOffset + document.documentElement.clientHeight,
-        };
-    if (
-        targetPosition.bottom >= windowPosition.top &&
-        targetPosition.top <= windowPosition.bottom
-    ) {
-        target.classList.add('highlight');
-    } else {
-        target.classList.remove('highlight');
-    }
-};
-
 // document.querySelector('.time').addEventListener('click', () => {
 // 	Visible(document.getElementById('time1'));
 // })
@@ -112,42 +89,6 @@ const Visible = function (target) {
 //     Visible(document.querySelector(".procent"));
 //     Visible(document.querySelector(".time5"));
 // });
-
-window.addEventListener("scroll", function () {
-    Visible(document.querySelector(".procent"));
-    Visible(document.querySelector(".time5"));
-});
-
-
-var touchStartTimeStamp = 0;
-var touchEndTimeStamp   = 0;
-
-window.addEventListener('touchstart', onTouchStart,false);
-window.addEventListener('touchend', onTouchEnd,false);
-
-window.addEventListener('mousedown', onTouchStart,false);
-window.addEventListener('mouseup', onTouchEnd,false);
-
-
-var timer;
-function onTouchStart(e) {
-    touchStartTimeStamp = e.timeStamp;
-        document.querySelector(".procent").classList.remove('highlight')
-    document.querySelector(".time5").classList.remove('highlight')
-}
-
-function onTouchEnd(e) {
-    touchEndTimeStamp = e.timeStamp;
-    console.log(touchEndTimeStamp - touchStartTimeStamp);// in miliseconds
-            Visible(document.querySelector(".procent"));
-        Visible(document.querySelector(".time5"));
-}
-
-function onTouch(e) {
-    document.querySelector(".wellcome__subtitle-accent").classList.contains('highlight') ? document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight') :  Visible(document.querySelector(".wellcome__subtitle-accent"));
-    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-}
-
 
 
 document.querySelector('.i1').addEventListener('click', () => {

@@ -132,39 +132,39 @@ function countBenefit() {
     }
 }
 
-const title = document.querySelector(".wellcome__subtitle-accent");
+// const title = document.querySelector(".wellcome__subtitle-accent");
 
-const Visible = function (target) {
-    var targetPosition = {
-            top: window.pageYOffset + target.getBoundingClientRect().top,
-            left: window.pageXOffset + target.getBoundingClientRect().left,
-            right: window.pageXOffset + target.getBoundingClientRect().right,
-            bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
-        },
-        windowPosition = {
-            top: window.pageYOffset,
-            left: window.pageXOffset,
-            right: window.pageXOffset + document.documentElement.clientWidth,
-            bottom: window.pageYOffset + document.documentElement.clientHeight,
-        };
+// const Visible = function (target) {
+//     var targetPosition = {
+//             top: window.pageYOffset + target.getBoundingClientRect().top,
+//             left: window.pageXOffset + target.getBoundingClientRect().left,
+//             right: window.pageXOffset + target.getBoundingClientRect().right,
+//             bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+//         },
+//         windowPosition = {
+//             top: window.pageYOffset,
+//             left: window.pageXOffset,
+//             right: window.pageXOffset + document.documentElement.clientWidth,
+//             bottom: window.pageYOffset + document.documentElement.clientHeight,
+//         };
 
-    if (
-        targetPosition.bottom > windowPosition.top && 
-        targetPosition.top < windowPosition.bottom && 
-        targetPosition.right > windowPosition.left &&
-        targetPosition.left < windowPosition.right
-    ) {
-        console.log("Вы видите элемент :)");
-        target.classList.add('highlight');
-    } else {
-        target.classList.remove('highlight');
-    }
-};
+//     if (
+//         targetPosition.bottom > windowPosition.top && 
+//         targetPosition.top < windowPosition.bottom && 
+//         targetPosition.right > windowPosition.left &&
+//         targetPosition.left < windowPosition.right
+//     ) {
+//         console.log("Вы видите элемент :)");
+//         target.classList.add('highlight');
+//     } else {
+//         target.classList.remove('highlight');
+//     }
+// };
 
-window.addEventListener("scroll", function () {
-    Visible(document.querySelector(".wellcome__subtitle-accent"));
-    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-});
+// window.addEventListener("scroll", function () {
+//     Visible(document.querySelector(".wellcome__subtitle-accent"));
+//     Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+// });
 
 // document.querySelector('.header').addEventListener('mousedown', () => {
 //     console.log('touch')
@@ -181,43 +181,43 @@ window.addEventListener("scroll", function () {
 //     }, 400); 
 // }, false);
 
-var touchStartTimeStamp = 0;
-var touchEndTimeStamp   = 0;
+// var touchStartTimeStamp = 0;
+// var touchEndTimeStamp   = 0;
 
-window.addEventListener('touchstart', onTouchStart,false);
-window.addEventListener('touchend', onTouchEnd,false);
+// window.addEventListener('touchstart', onTouchStart,false);
+// window.addEventListener('touchend', onTouchEnd,false);
 
-window.addEventListener('mousedown', onTouchStart,false);
-window.addEventListener('mouseup', onTouchEnd,false);
+// window.addEventListener('mousedown', onTouchStart,false);
+// window.addEventListener('mouseup', onTouchEnd,false);
 
 
-var timer;
-function onTouchStart(e) {
-    touchStartTimeStamp = e.timeStamp;
-        document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
-    document.querySelector(".wellcome__subtitle-accent_mob").classList.remove
+// var timer;
+// function onTouchStart(e) {
+//     touchStartTimeStamp = e.timeStamp;
+//         document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight')
+//     document.querySelector(".wellcome__subtitle-accent_mob").classList.remove
     
-    ('highlight')
-}
+//     ('highlight')
+// }
 
-function onTouchEnd(e) {
-    touchEndTimeStamp = e.timeStamp;
-    console.log(touchEndTimeStamp - touchStartTimeStamp);// in miliseconds
-            Visible(document.querySelector(".wellcome__subtitle-accent"));
-        Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-}
+// function onTouchEnd(e) {
+//     touchEndTimeStamp = e.timeStamp;
+//     console.log(touchEndTimeStamp - touchStartTimeStamp);// in miliseconds
+//             Visible(document.querySelector(".wellcome__subtitle-accent"));
+//         Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+// }
 
-function onTouch(e) {
-    document.querySelector(".wellcome__subtitle-accent").classList.contains('highlight') ? document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight') :  Visible(document.querySelector(".wellcome__subtitle-accent"));
-    Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
-}
+// function onTouch(e) {
+//     document.querySelector(".wellcome__subtitle-accent").classList.contains('highlight') ? document.querySelector(".wellcome__subtitle-accent").classList.remove('highlight') :  Visible(document.querySelector(".wellcome__subtitle-accent"));
+//     Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+// }
 
 
 // window.addEventListener('click', onTouch, false);
 
 
-Visible(title);
-Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
+// Visible(title);
+// Visible(document.querySelector(".wellcome__subtitle-accent_mob"));
 
 
 
