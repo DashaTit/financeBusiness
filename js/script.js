@@ -132,7 +132,6 @@ function countBenefit() {
     }
 }
 
-// const title = document.querySelector(".wellcome__subtitle-accent");
 
 // const Visible = function (target) {
 //     var targetPosition = {
