@@ -117,9 +117,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.header__logo {
-  width: 127px;
-}
 .header__logo img {
   width: 85px;
   height: 104px;
@@ -138,7 +135,7 @@ body {
   .header__logo img {
     width: 44px;
     height: 54px;
-    margin-right: 36px;
+    margin-right: 26px;
   }
   .header__logo-text {
     width: 156px;
@@ -146,6 +143,11 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
     font-weight: 300;
+  }
+}
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 127px;
   }
 }
 .header__container {
@@ -1592,15 +1594,5 @@ body {
 }
 
 .highlight {
-  animation: anim 1s 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes anim {
-  0% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 0 0 10px #fff;
-  }
+  text-shadow: 0 0 10px #fff;
 }

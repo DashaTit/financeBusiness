@@ -114,8 +114,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 
+
+
     &__logo {
-        width: 127px;
+        // width: 177px;
         & img {
             width: 85px;
             height: 104px;
@@ -131,12 +133,14 @@ body {
             display: flex;
             
             align-items: center;
+
             & img {
                 width: 44px;
                 height: 54px;
-                margin-right: 36px;
+                margin-right: 26px;
             }
             &-text {
+                // margin-left: 36px;
                 width: 156px;
                 font-family: "Bebas Neue";
                 letter-spacing: 0.03em;
@@ -145,6 +149,10 @@ body {
             }
         }
     }
+
+    &__logo {@media (min-width: 1200px) {
+        width: 127px;
+    } }
 
     &__container {
         padding-top: 25px;

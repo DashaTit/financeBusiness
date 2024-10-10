@@ -103,7 +103,7 @@ body {
     background-repeat: no-repeat;
 
     &__logo {
-        width: 127px;
+        // width: 177px;
         & img {
             width: 85px;
             height: 104px;
@@ -115,17 +115,18 @@ body {
             font-weight: 300;
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
             display: flex;
-            width: 100%  ;
+            
             align-items: center;
+
             & img {
                 width: 44px;
                 height: 54px;
-                margin-right: 36px;
+                margin-right: 26px;
             }
             &-text {
-
+                // margin-left: 36px;
                 width: 156px;
                 font-family: "Bebas Neue";
                 letter-spacing: 0.03em;
@@ -1052,7 +1053,7 @@ body {
 
 .highlight {
     // text-shadow: 0 0 30px #23971E;
-    animation: anim 1s infinite;
+    animation: anim 1s 1;
     animation-fill-mode: forwards;
 }
 
