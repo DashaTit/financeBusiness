@@ -148,6 +148,36 @@ document.querySelector('.ok3').addEventListener('click', () => {
     }, 1000)
 })
 
+document.querySelector('.mini').addEventListener('click', () => {
+	target = document.querySelector('.min200')
+    // target.classList.add('highlight');
+    // document.querySelector('.procent').classList.remove('highlight');
+    setTimeout(()=>{
+        Visible(target)
+        scrollMin();
+    }, 1000)
+})
+
+document.querySelector('.mini2').addEventListener('click', () => {
+	target = document.querySelector('.min200')
+    // target.classList.add('highlight');
+    // document.querySelector('.procent').classList.remove('highlight');
+    setTimeout(()=>{
+        Visible(target)
+        scrollMin();
+    }, 1000)
+})
+
+document.querySelector('.mini3').addEventListener('click', () => {
+	target = document.querySelector('.min200')
+    // target.classList.add('highlight');
+    // document.querySelector('.procent').classList.remove('highlight');
+    setTimeout(()=>{
+        Visible(target)
+        scrollMin();
+    }, 1000)
+})
+
 document.querySelector('.i1').addEventListener('click', () => {
     const burgerBtn = document.querySelector(".burger");
     const mobMenu = document.querySelector(".mob-menu");
@@ -246,6 +276,13 @@ window.addEventListener('load', () => {
             Visible(target)
             scrollTime();
         }, 1000)
+    }  else if (window.location.href.includes('issue')) {
+        target = document.querySelector('.min200')
+        // target.classList.add('highlight');
+        setTimeout(()=>{
+            Visible(target)
+            scrollMin();
+        }, 1000)
     }
 })
 
@@ -301,6 +338,34 @@ function scrollTime() {
         if (!isVisible) {
             console.log('remove')
             document.querySelector('.time5').classList.remove('highlight');
+        }
+    })
+}
+
+function scrollMin() {
+    console.log('scroll')
+    window.addEventListener('scroll', () => {
+        let target = document.querySelector('.min200')
+        // let rect = element.getBoundingClientRect();
+        var targetPosition = {
+                            top: window.pageYOffset + target.getBoundingClientRect().top,
+                            left: window.pageXOffset + target.getBoundingClientRect().left,
+                            right: window.pageXOffset + target.getBoundingClientRect().right,
+                            bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+                        },
+                        windowPosition = {
+                            top: window.pageYOffset,
+                            left: window.pageXOffset,
+                            right: window.pageXOffset + document.documentElement.clientWidth,
+                            bottom: window.pageYOffset + document.documentElement.clientHeight,
+                        };
+        let isVisible = targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+        targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+        targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+        targetPosition.left < windowPosition.right
+        if (!isVisible) {
+            console.log('remove')
+            document.querySelector('.min200').classList.remove('highlight');
         }
     })
 }

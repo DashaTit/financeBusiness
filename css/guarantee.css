@@ -919,6 +919,7 @@ body {
 .footer__logo-text {
   margin-right: 54px;
   width: 117px;
+  height: fit-content;
   font-family: "Bebas Neue";
   letter-spacing: 0.03em;
   font-size: 18px;
