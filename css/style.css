@@ -1572,6 +1572,7 @@ body {
 }
 
 .footer__logo-text {
+  height: fit-content;
   margin-right: 54px;
   width: 117px;
   font-family: "Bebas Neue";
