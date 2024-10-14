@@ -777,6 +777,9 @@ body {
 
         max-width: 982px;
         margin-bottom: 19px;
+        &-accent {
+            font-size: 24px;
+        }
         &-phone {
             opacity: 0;
         }
@@ -791,19 +794,20 @@ body {
             display: none;
 
             &-phone {
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 20px;
                 opacity: 1;
                 text-align: center;
 
                 .wellcome-accent {
-                    
+                    font-size: 20px;
+                    line-height: 35px;
                     text-align: center;
                     display: block;
                     margin-bottom: 10px;
                 }
             }
         }
-
         
     }
     &__btn {
@@ -834,7 +838,7 @@ body {
 
         @media (max-width: 400px) {
             height: 60px;
-            top: 370px;
+            top: 380px;
             width: 250px;
         }
     }

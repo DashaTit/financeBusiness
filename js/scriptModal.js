@@ -207,58 +207,7 @@ document.querySelector('.i4').addEventListener('click', () => {
     mobMenu.classList.toggle("active");
 }) 
 
-// window.addEventListener('scroll', () => {
-    
-//     target = document.getElementById('time');
-//     var targetPosition = {
-//         top: window.pageYOffset + target.getBoundingClientRect().top,
-//         left: window.pageXOffset + target.getBoundingClientRect().left,
-//         right: window.pageXOffset + target.getBoundingClientRect().right,
-//         bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
-//     },
-//     windowPosition = {
-//         top: window.pageYOffset,
-//         left: window.pageXOffset,
-//         right: window.pageXOffset + document.documentElement.clientWidth,
-//         bottom: window.pageYOffset + document.documentElement.clientHeight,
-//     };
-//     if (
-        
-//         targetPosition.bottom < windowPosition.top ||
-//         targetPosition.top > windowPosition.bottom
-//     ) {
-//         document.querySelector('.time5').classList.remove('highlight');
-//         console.log('scr');
-//     }
-// })
 
-// setInterval(() => {
-//     target = document.getElementById('approval-procent');
-
-//     var targetPosition = {
-//                 top: window.pageYOffset + target.getBoundingClientRect().top,
-//                 left: window.pageXOffset + target.getBoundingClientRect().left,
-//                 right: window.pageXOffset + target.getBoundingClientRect().right,
-//                 bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
-//             },
-//             windowPosition = {
-//                 top: window.pageYOffset,
-//                 left: window.pageXOffset,
-//                 right: window.pageXOffset + document.documentElement.clientWidth,
-//                 bottom: window.pageYOffset + document.documentElement.clientHeight,
-//             };
-//             if (
-                
-//                 targetPosition.bottom < windowPosition.top ||
-//                 targetPosition.top > windowPosition.bottom
-//             ) {
-//                 document.querySelector('.procent').classList.remove('highlight');
-//                 console.log('scr');
-//             }  else {
-//                 console.log('time stop')
-//             }
-
-// }, 1000)
 
 window.addEventListener('load', () => {
     console.log(window.location.href)
